@@ -39,3 +39,15 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .dos-columnas {
+        display: flex;
+        justify-content: space-between;
+        /*gap: 2rem; podria dejarse pero no tiene el 100% de soporte*/
+    }
+
+    .entrada-blog {
+        flex: 0 0 calc( 50% - 1rem); /* Esta sintaxis contiene todo el soporte para cualquier navegador*/
+    }
+}
